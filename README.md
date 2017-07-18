@@ -1,25 +1,23 @@
-![svg-captcha](media/header.png)
+# svg captcha smooth
+based on svg-captcha(https://github.com/steambap/svg-captcha)
+generate svg captcha in node.js just for own projects,
+as we need to make the captcha be recognized much easier by human.
 
-# svg captcha
+## sample image
+captcha image by svg-captcha:
 
-[![Build Status](https://travis-ci.org/lemonce/svg-captcha.svg?branch=master)](https://travis-ci.org/steambap/svg-captcha)
+![image](media/example.png)
 
-generate svg captcha in node.js
+new captcha image:
 
-## Translations
-[中文](README_CN.md)
-
-## useful if you
-
-- cannot or do not want to use google recaptcha
-- have issue with install c++ addon
+![image2](media/example-2.png)
 
 ## install
-> npm install --save svg-captcha
+> npm install --save svg-captcha-smooth
 
 ## usage
 ```Javascript
-var svgCaptcha = require('svg-captcha');
+var svgCaptcha = require('svg-captcha-smooth');
 
 var captcha = svgCaptcha.create();
 console.log(c);
@@ -27,7 +25,7 @@ console.log(c);
 ```
 with express
 ```Javascript
-var svgCaptcha = require('svg-captcha');
+var svgCaptcha = require('svg-captcha-smooth');
 
 app.get('/captcha', function (req, res) {
 	var captcha = svgCaptcha.create();
@@ -83,31 +81,6 @@ return a svg captcha based on text provided.
 
 In pre 1.1.0 version you have to call these two functions,  
 now you can call create() to save some key strokes ;).
-
-## sample image
-default captcha image:
-
-![image](media/example.png)
-
-math expression image with color options:
-
-![image2](media/example-2.png)
-
-## why use svg?
-
-It does not require any c++ addon.  
-The result image is smaller than jpeg image.
-
-> This has to be a joke. /\<text.+\>;.+\<\/text\>/g.test...
-
-svg captcha uses opentype.js underneath, which means that there is no
-'&lt;text&gt;1234&lt;/text&gt;'.  
-You get
-'&lt;path fill="#444" d="M104.83 19.74L107.85 19.74L112 33.56L116.13 19.74L119.15 19.74L113.48 36.85...'  
-instead.  
-  
-Even though you can write a program that convert svg to png, svg captcha has done its job  
-—— make captcha recognition harder
 
 ## License
 [MIT](LICENSE.md)

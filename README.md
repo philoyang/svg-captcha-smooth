@@ -6,11 +6,11 @@ as we need to make the captcha be recognized much easier by human.
 ## sample image
 captcha image by svg-captcha:
 
-![image](media/example.png)
+![image](media/oldcaptcha.png)
 
 new captcha image:
 
-![image2](media/example-2.png)
+![image2](media/new.png)
 
 ## install
 > npm install --save svg-captcha-smooth
@@ -78,9 +78,6 @@ In addition to size, noise, color, and background, you can also set the followin
 return a random string.
 #### `svgCaptcha(text, options)`
 return a svg captcha based on text provided.  
-
-In pre 1.1.0 version you have to call these two functions,  
-now you can call create() to save some key strokes ;).
 
 ## License
 [MIT](LICENSE.md)

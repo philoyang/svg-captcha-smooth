@@ -52,14 +52,14 @@
     "*.md"
   ],
   "gitHead": "5f03b1872ff0d07d527ca4f9a484fb7d4cdbd5e2",
-  "_id": "svg-captcha@1.3.2",
+  "_id": "svg-captcha-smooth@1.3.2",
   "_shasum": "1537e418b7cc3a711d739bf52c3dca2b24ef1bb4",
-  "_from": "svg-captcha@>=1.1.3 <2.0.0",
+  "_from": "svg-captcha-smooth@>=1.1.3 <2.0.0",
   "_npmVersion": "3.10.10",
-  "_nodeVersion": "6.9.5",
+  "_nodeVersion": "6.10.0",
   "_npmUser": {
-    "name": "oc-weilin-shi",
-    "email": "shiweilin@or-change.cn"
+    "name": "zhi",
+    "email": "zealyang@qq.com"
   },
   "dist": {
     "shasum": "1537e418b7cc3a711d739bf52c3dca2b24ef1bb4",
@@ -67,8 +67,8 @@
   },
   "maintainers": [
     {
-      "name": "oc-weilin-shi",
-      "email": "shiweilin@or-change.cn"
+      "name": "zhi",
+      "email": "zealyang@qq.com"
     }
   ],
   "_npmOperationalInternal": {
